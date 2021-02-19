@@ -1,0 +1,302 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 15px sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img {
+    display: grid;
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    border-radius: 4px;
+    padding: 5px;
+    background: transparent;
+}
+
+div.row {
+    margin-right: 0px;
+}
+
+div.container-fluid {
+    padding-right: 0px;
+}
+
+.container {
+    min-height: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-rows: 15% 90% 50%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-fluid {
+    width: 100%;
+    display: grid;
+    font-family: 'SourceSansProRegular', Arial, Helvetica, sans-serif!important;
+    font-size: 16px!important;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    color: #444!important;
+    box-sizing: inherit;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer {
+    height: 260px;
+    display: grid;
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+    line-height: 20px;
+    font-weight: 200;
+    font-family: 'SourceSansProRegular', Arial, Helvetica, sans-serif!important;
+    font-size: 16px!important;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    display: block;
+    text-align: right;
+}
+
+
+/*CABECERA DEL INICIO*/
+
+.cabecera {
+    display: grid;
+    background: rgb(1, 36, 65);
+    grid-template-columns: 50% 50%;
+}
+
+.subcab1 {
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    font: 15px sans-serif;
+    color: white;
+}
+
+.subcab1 span {
+    color: rgb(15, 154, 247);
+}
+
+.subcab2 {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+}
+
+.subcab2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    /*letra en negrilla*/
+}
+
+.subcab2 li {
+    list-style: none;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.subcab2 a:hover {
+    color: rgb(15, 154, 247);
+}
+
+
+/*CUERPO DE L APGINA DE INICIO*/
+
+.cuerpo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 15% 50%;
+}
+
+.cuerpo1 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-image: url(../img/6733.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: rgb(40, 40, 40);
+    background-blend-mode: soft-light;
+}
+
+.cuerpo2 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(1, 36, 65);
+}
+
+.cuerpo2 span {
+    color: brown;
+}
+
+.cuerpo3 {
+    display: grid;
+    background: rgb(50, 50, 50);
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: repeat(1, 300px);
+}
+
+.box {
+    font-size: 16px!important;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    color: #444!important;
+    hyphens: manual;
+    word-break: normal;
+    box-sizing: inherit;
+    display: grid;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 2rem;
+    grid-gap: 1rem;
+    font-size: 5rem;
+}
+
+.box2 {
+    padding: 0 15px;
+    width: 340px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    color: rgb(0, 0, 0);
+}
+
+.grid2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    background: rgb(40, 40, 40);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.imgb {
+    -webkit-box-direction: normal;
+    box-sizing: inherit;
+    height: auto;
+    border: 0;
+    max-width: 75px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+
+.cuerpo3 div {
+    display: grid;
+    justify-items: center;
+}
+
+.gridcenter {
+    line-height: 20px;
+    font-weight: 200;
+    font-family: 'SourceSansProRegular', Arial, Helvetica, sans-serif!important;
+    font-size: 16px!important;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    color: #444!important;
+    hyphens: manual;
+    word-break: normal;
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 10px 15px 15px 15px;
+    text-align: center;
+}
+
+
+/*hora*/
+
+.horaiconid {
+    width: 20px;
+    max-width: 100%;
+    height: 20px;
+    vertical-align: middle;
+    border: 0;
+}
+
+.currentDate {
+    display: inline-flex;
+    margin: 3px 0 0 6%;
+    width: 45%;
+    height: 20px;
+}
+
+.user {
+    line-height: 20px;
+    font-weight: 200;
+    letter-spacing: .1px;
+    font-family: 'SourceSansProRegular', Arial, Helvetica, sans-serif!important;
+    font-size: 14px;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    color: #00afca;
+    width: 48%;
+    position: absolute;
+    height: 28px;
+    display: inline-block;
+}
+
+.super {
+    line-height: 20px;
+    font-weight: 200;
+    letter-spacing: .1px;
+    font-family: 'SourceSansProRegular', Arial, Helvetica, sans-serif!important;
+    font-size: 14px;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background: #cdf5ff none repeat scroll 0 0;
+    height: 28px;
+    color: #00afca;
+}
+
+.hora {
+    line-height: 5px;
+    font-weight: 200;
+    letter-spacing: .1px;
+    font-family: 'SourceSansProRegular', Arial, Helvetica, sans-serif!important;
+    font-size: 14px;
+    height: 28px;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    color: #00afca;
+}
+
+ul {
+    line-height: 20px;
+    font-weight: 200;
+    letter-spacing: .1px;
+    font-family: 'SourceSansProRegular', Arial, Helvetica, sans-serif!important;
+    font-size: 14px;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    color: #00afca;
+    padding: 0;
+    margin: 0 0 10px 25px;
+    list-style: outside none none;
+    width: auto;
+    float: right;
+}

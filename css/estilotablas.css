@@ -1,0 +1,72 @@
+h1 {
+	color:white;
+	text-align: center;
+}
+
+body {
+	background-image: url(../img./dd.png);
+	background-position: center;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 15px sans-serif;
+	overflow-x:hidden;
+    
+}
+.cabecera{
+	
+    background-color: #112244;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 70%;
+
+}
+
+.piedpa{
+    background-color: #112244;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.cuerpo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 110% 95%;
+    align-items: center;
+    justify-items: center;
+}
+
+.cuerpo table{
+    
+    border: black solid 1px;
+    color: black;
+    border-spacing:0;
+    text-align: center;
+}
+
+.cuerpo table tr{
+    height: 50px;
+}
+
+
+.cuerpo table tr:nth-child(2n+1){
+    background-color: #D1D1D1;
+}
+
+.cuerpo table tr:nth-child(2n+0){
+    background-color: #A7A7A7;
+}
+
+.cuerpo table td,th{    
+    width: 150px;
+}

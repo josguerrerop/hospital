@@ -1,0 +1,122 @@
+/*ESTILOS GLOBALES*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 15px sans-serif;
+    color: white;
+}
+
+.container{
+    min-height: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 85% 100%;
+}
+
+
+/*CABECERA DEL INICIO*/
+
+.cabecera{
+    display: grid;
+    background: rgb(1, 36, 65);
+    grid-template-columns: 50% 50%;
+}
+
+.subcab1{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    font: 15px sans-serif;
+    color: white;
+
+}
+
+.subcab1 span{
+    color: rgb(15, 154, 247);
+}
+
+
+.subcab2{
+    display: grid;
+    justify-items: end;
+    align-items: center;
+}
+
+.subcab2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;/*letra en negrilla*/
+}
+
+
+
+.subcab2 li{
+    list-style: none;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.subcab2 a:hover{
+    color: rgb(15, 154, 247);
+}
+
+
+/*CUERPO DE L APGINA DE INICIO*/
+
+.cuerpo{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 12% 70%;
+}
+
+
+.cuerpo1{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-image: url(../img/6733.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: rgb(40,40,40);
+    background-blend-mode: soft-light;
+}
+
+
+.cuerpo2{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color:  rgb(1, 36, 65);
+}
+.cuerpo2 span{
+    color: brown;
+}
+
+.cuerpo3{
+    background: rgb(50,50,50);
+    display: grid;
+    grid-template-rows: 10% 30% 60%;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1em;
+}
+
+.cuerpo3 div{
+    display: grid;
+    justify-items: center;
+    background-color:rgb(40,40,40) ;
+}
+
+
+
+
+
+
+
+
+
