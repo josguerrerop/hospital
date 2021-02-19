@@ -37,9 +37,6 @@ CREATE TABLE `agendar` (
 -- Volcado de datos para la tabla `agendar`
 --
 
-INSERT INTO `agendar` (`id_visita`, `id_especialidad`, `id_medico`) VALUES
-(1, 6, 501);
-
 -- --------------------------------------------------------
 
 --
@@ -113,9 +110,6 @@ CREATE TABLE `estar` (
 -- Volcado de datos para la tabla `estar`
 --
 
-INSERT INTO `estar` (`id_visita`, `id_estado`) VALUES
-(1, 3);
-
 -- --------------------------------------------------------
 
 --
@@ -151,9 +145,6 @@ CREATE TABLE `medico` (
 -- Volcado de datos para la tabla `medico`
 --
 
-INSERT INTO `medico` (`id_m`, `nombre_m`, `apellidos_m`, `fecha_nacm`, `direccion_m`, `telefono_m`, `correo_m`, `pass_m`, `id_especialidad`) VALUES
-(501, 'Pacho', 'Peñuela', '1996-02-15', 'Usme', '3007898640', 'pacho@gmail.com', 'pacho', 6);
-
 -- --------------------------------------------------------
 
 --
@@ -175,13 +166,6 @@ CREATE TABLE `paciente` (
 -- Volcado de datos para la tabla `paciente`
 --
 
-INSERT INTO `paciente` (`id_p`, `nombre_p`, `apellidos_p`, `fecha_nac`, `direccion_p`, `telefono_p`, `correo_p`, `pass_p`) VALUES
-(5564564, 'Dayana', 'Gomez', '2021-02-03', 'Cra 225 N 12', '6535', 'dayis9.g@hotmail.com', '120'),
-(53021168, 'Yura', 'G', '2021-02-02', 'Cra 12', '56465465', 'amor@hotmail.com', '123'),
-(78798798, 'Alejo', 'Rodr', '2021-02-09', 'Cra 12', '231231', 'alejandro@yopmail.com', '85'),
-(80762099, 'Arturo', 'Sivlva', '2021-02-13', 'Clle 22', '231231', 'arturosilva@gmail.com', '123'),
-(1000033591, 'Dyana', 'Silva', '2021-02-09', 'Clle 90 sur', '3145214', 'dayana@gmail.com', '123'),
-(1000690579, 'Francisco', 'Peñuela', '2021-02-04', 'Calle 115 sur #5-34', '3203704037', 'fapenuelag@gmail.com', '123');
 
 -- --------------------------------------------------------
 
@@ -199,9 +183,6 @@ CREATE TABLE `solicitar` (
 -- Volcado de datos para la tabla `solicitar`
 --
 
-INSERT INTO `solicitar` (`id_visita`, `id_p`, `fecha_solicitud`) VALUES
-(1, 80762099, '2021-02-18');
-
 -- --------------------------------------------------------
 
 --
@@ -218,24 +199,7 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`correo`, `pass`, `num_nivel`) VALUES
-('alejandro@yopmail.com', '85', 2),
-('amor@hotmail.com', '123', 2),
-('arturoi@gmail.com', '123', 1),
-('arturosilva@gmail.com', '123', 2),
-('camilasilva@gmail.com', '123', 1),
-('carlossilva@gmail.com', '123', 1),
-('controller1@gmail.com', '123', 1),
-('dariosilva@gmail.com', '123', 1),
-('dayana@gmail.com', '123', 2),
-('dayis9.g@hotmail.com', '120', 2),
-('fabiansilva@gmail.com', '123', 1),
-('fapenuelag@gmail.com', '123', 1),
-('helenasilva@gmail.com', '123', 1),
-('manuel@gmail.com', 'manuel', 0),
-('mariannasilva@gmail.com', '123', 1),
-('mariasilva@gmail.com', '123', 1),
-('pacho@gmail.com', 'pacho', 1);
+
 
 -- --------------------------------------------------------
 
@@ -252,9 +216,6 @@ CREATE TABLE `visita` (
 --
 -- Volcado de datos para la tabla `visita`
 --
-
-INSERT INTO `visita` (`id_visita`, `hora_v`, `fecha_v`) VALUES
-(1, '16:30:00', '2021-02-26');
 
 --
 -- Índices para tablas volcadas
