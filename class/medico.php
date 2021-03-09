@@ -10,6 +10,7 @@ class Medico{
         $this->agenda = array();
         $this->agendado = array();
         $this->cancelado = array();
+        $this->visitas = array();
      }
 
 public function ver_especialidades(){
@@ -194,6 +195,29 @@ public function returnid($ema, $pass)
         }
         return $this->agendado;
     }
+
+    /////////
+public function GetVisitas($id_paciente,$fecha){
+    $sql1 = "SELECT v.id_visita, v.fecha_v , v.hora_v , m.nombre_m , e.nombre_e
+
+    FROM solicitar so , visita v, paciente p,
+                  agendar a , medico m , especialidad e
+                  
+               WHERE e.id_especialidad=m.id_especialidad and
+                     e.id_especialidad=a.id_especialidad and
+                     m.id_m=a.id_medico and             
+                     a.id_visita=v.id_visita and
+                     so.id_visita=v.id_visita and
+                     so.id_p = p.id_p and 
+                      p.id_p= $id_paciente and
+                      v.fecha_v = '$fecha';";
+          $res1 = mysqli_query(Conectar::con(), $sql1);
+                 while ($row1 = mysqli_fetch_assoc($res1)) {
+                 $this->visitas[]= $row1;
+                      }
+                    return $this->visitas;
+}
+    ////////
 
     public function CanceladoM($idF)
     {

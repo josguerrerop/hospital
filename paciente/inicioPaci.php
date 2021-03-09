@@ -8,9 +8,7 @@ $dia = strftime('%A');
 include('../class/clase_paciente.php');
 session_start();
 ?>
-
-<head>
-
+<link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Inicio Paciente</title>
@@ -22,8 +20,48 @@ session_start();
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estiloInicio.css" type="text/css">
 </head>
-
 <body>
+<script>
+
+function getAdd(){
+    $('#myModal').modal('show');
+}
+</script>
+<head>
+
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: RGB(18, 33, 33);">
+
+        <h4 class="modal-title"><i class="fas fa-couch"></i>&nbsp; Ver visitas</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div style="background-color: rgb(239, 245, 243);">
+        <div class="modal-body">
+        </div>
+        <form action="misVisitas.php" method="post">
+        <div align='center'>
+          <h5 style="color:black"> Seleccione la fecha  de la visita </h5>
+          <input type="date" id="FECHA" name="FECHA"
+       value="2021-03-03"
+       min="2018-01-01" max="2021-03-03">
+
+       
+        </div>
+        <h1>sd</h1>
+        <div align='center'>
+        <button type="submit" class="btn btn-dark ">Ver visitas</button>
+        </form>
+        </div>
+      </div>
+      <div class="modal-footer"></div>
+
+    </div>
+
+  </div>
+</div>
     <div class="super">
         <div class="currentDate">
             <div class="hora"><img src="../img/icon-hora-d.svg" class="horaiconid">
@@ -81,6 +119,15 @@ session_start();
                             <img src="../img/calendario.png" height="90" width="90" alt="">
                             <div class="gridcenter">
                                 <h4><a href="agenda.php"> Agenda</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="grid2">
+                            <img src="../img/calendario.png" height="90" width="90" alt="">
+                            <div class="gridcenter">
+                        
+                            <a onclick="getAdd();" class="btn" style="color: blue;"> Ver visitas
                             </div>
                         </div>
                     </div>

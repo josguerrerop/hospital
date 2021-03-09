@@ -5,9 +5,10 @@ setlocale(LC_ALL, 'es_ES');
 $fecha = new DateTime();
 $date = $fecha->format('d/m/Y');
 $dia = strftime('%A');
-include('../class/medico.php');
+include('../class/conexion.php');
+$cancelado = array();
 session_start();
-$m = new Medico();
+
 $reg = $m->AgendadoM($_SESSION['id']);
 ?>
 
@@ -31,6 +32,7 @@ $reg = $m->AgendadoM($_SESSION['id']);
 </head>
 
 <body>
+
     <div class="super">
         <div class="currentDate">
             <div class="hora"><img src="../img/icon-hora-d.svg" class="horaiconid">
